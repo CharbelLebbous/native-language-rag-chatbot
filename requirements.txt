@@ -1,0 +1,33 @@
+# semantic_RAG_chatbot requirements file
+
+# === Vector Indexing & Retrieval ===
+
+llama-index  # ✅ LlamaIndex (core) for building and querying the vector store
+
+# === Cohere SDK ===
+
+cohere  # ✅ Cohere official Python client for embeddings, chat, summarization, entities, and answer generation
+
+# === Vector Database Backend ===
+
+faiss-cpu  # ✅ FAISS (CPU version) — optional, but useful if you want local vector DB speed (may not be used if LlamaIndex default storage is enough)
+
+# === OCR & PDF Processing ===
+
+pytesseract  # ✅ Python bindings for Tesseract OCR engine
+pdf2image     # ✅ Convert PDF pages to images for OCR step
+PyMuPDF       # ✅ fitz: fast PDF parsing (text extraction, image export, etc.)
+
+# === DOCX Support ===
+
+python-docx   # ✅ Read .docx files with more control (not always needed if LlamaIndex handles .docx via SimpleDirectoryReader)
+docx2txt      # ✅ Sometimes useful fallback for quick .docx → .txt extraction
+
+# === Web UI ===
+
+streamlit     # ✅ Streamlit app for user interaction
+
+# === LlamaIndex plugins ===
+
+llama-index-embeddings-cohere  # ✅ Plugin to connect Cohere embeddings to LlamaIndex
+

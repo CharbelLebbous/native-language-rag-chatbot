@@ -1,0 +1,20 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+env/
+venv/
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore environment files
+.env
+
+# Ignore storage (optional, if your index is big)
+storage/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
